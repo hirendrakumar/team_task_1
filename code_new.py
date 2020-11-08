@@ -228,8 +228,6 @@ def s3conf():
         obj_name = input("Enter object name : ")
         s = sp.getoutput('aws s3 rm s3://{0}/{1}'.format(buck_name,obj_name))
         print(s)
-import os
-import subprocess as sp
 
 def cluster():
         status = sp.getstatusoutput("rpm -q hadoop")
